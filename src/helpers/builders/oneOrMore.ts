@@ -9,5 +9,12 @@ import { PredicatsToBoolean } from "../../interfaces&types/interfaces";
 export const oneOrMore: PredicatsToBoolean = (...validators: (Predicate)[]) => (
   value: string | number
 ): boolean => {
+  return validators.some(validator => validator(value));
+};
+
+export const oneOrMoreFalse: PredicatsToBoolean = (...validators: (Predicate)[]) => (
+  value: string | number
+): boolean => {
   return validators.some(validator => !validator(value));
 };
+
