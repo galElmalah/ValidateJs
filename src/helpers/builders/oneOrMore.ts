@@ -1,5 +1,5 @@
-import { Predicate } from "../interfaces&types/types";
-import { PredicatsToBoolean } from "../interfaces&types/interfaces";
+import { Predicate } from "../../interfaces&types/types";
+import { PredicatsToBoolean } from "../../interfaces&types/interfaces";
 
 
 /**

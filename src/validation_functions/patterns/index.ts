@@ -1,6 +1,6 @@
 import { urlPattern, emailPattern } from "../../helpers/regExPatterns";
-import { composeValidators } from "../../helpers/composeValidators";
-import { isHttps } from '../../helpers/partials/index';
+import { composeValidators } from "../../helpers/builders/composeValidators";
+import { isHttps } from "../../helpers/partials/index";
 
 /**
  * @param { string } url
